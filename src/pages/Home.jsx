@@ -90,7 +90,7 @@ const Home = () => {
               </div>
             </div>
             <div style={{marginTop: 60}}>
-              <Link to='/create-post' className='font-inter font-medium bg-[#6469ff] text-white px-4 py-2 rounded-md'>
+              <Link to='/create' className='font-inter font-medium bg-[#6469ff] text-white px-4 py-2 rounded-md'>
                 Crear
               </Link>
             </div>
