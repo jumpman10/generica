@@ -1,0 +1,55 @@
+.container{
+    width: 100%;  
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+.container:hover{
+    cursor: pointer;
+}
+.imgContainer{
+    width: 100%;
+}
+.textContainer{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    margin-top: 10px;
+}
+
+.carousel{
+    timeline-scope: --carousel;
+}
+  
+.slider {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.slider::-webkit-scrollbar {
+    height: 0.9rem;
+}   
+.slider::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}   
+.slider::-webkit-scrollbar-thumb {
+    background-color: rgb(185, 185, 185);
+    border-radius: 10px;
+}
+.title{
+    font-weight: bold;
+    font-weight: 500;
+}
+.description{
+    font-weight: 200;
+    font-style: italic;
+    color: gray;
+}  
+@keyframes activate {
+    0%,
+    100% {
+      background: #09f;
+      opacity: 1;
+    }
+}

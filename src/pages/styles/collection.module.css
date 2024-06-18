@@ -1,0 +1,40 @@
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 85%;
+    background-color: rgb(255, 255, 255);
+}
+.imgContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    margin-top: 40px;
+}
+.collectionImage{
+    width: 30%;
+}
+.cardModels{
+    width: 27%;
+    margin-top: 20px;
+}
+@media screen and (max-width: 600px) {
+    .imgContainer{
+        margin-top: 5px;
+    }
+    .cardModels{
+        width: 48%;
+        margin-top: 10px;
+    }
+}

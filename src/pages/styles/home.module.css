@@ -1,0 +1,244 @@
+.container{
+    display: flex;
+    width: 95vw;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+}
+.create{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    padding-block: 30px;
+    padding-inline: 3%;
+    position: relative;
+    margin-top: 70px;
+}
+.createTitle{
+    font-size: 3rem;
+    font-weight: 100;
+    color: black;
+}
+.steps{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 100;
+    margin-top: 50px;
+}
+.steps div{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.steps h1{
+    font-size: 1.6rem;
+    font-weight: 200;
+    font-style: italic;
+}
+.cardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 75%;
+    background-color: rgb(255, 255, 255);
+}
+.links{
+    width: 27%;
+    margin-top: 20px;
+}
+.section{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.goToModels{
+    font-size: 2rem;
+    font-weight: 300;
+    font-style: italic;
+}
+.title{
+    width: 30%;
+}
+.titleText{
+    font-size: 3rem;
+    font-weight: 100;
+    color: white;
+}
+.titleContainer{
+    width: 100%;
+    height: 180px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    padding-inline: 3%;
+    align-items: center;
+}
+.divisorContainer{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.divisor{
+    width: 5%;
+    height: 100%;
+    background-color: white;
+    transform: skew(-20deg);
+}
+.footer{
+    width: 100%;
+    height: 300px;
+    border-top: 1px solid #c1c7d1;
+    background-color: aqua;
+}
+.collectionContainer{
+    display: flex;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.collection{
+    display: flex;
+    width: 100%;
+    height: 400px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(0, 0, 0);
+    padding-inline: 3%;
+}
+
+.cardCollection{
+    display: flex;
+    width: 250px;
+    height: 340px;
+    flex-direction: column;
+    align-items: center;
+    border: solid 1px rgb(163, 163, 163);
+    padding: 10px;
+}
+.cardCollection:hover{
+    border: solid 3px rgb(163, 163, 163);
+}
+.imgContainer{
+    width: 100%;
+    border: solid 1px rgb(163, 163, 163);
+}
+.collectionImageContainer{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.divition1{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.divition2{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.logoCollection{
+    width: 85%;
+}
+.collectionNames{
+    width: 65%;
+}
+@media screen and (max-width: 600px) {
+    .cardContainer{
+        width: 90%;
+        gap:1px
+    }
+    .links{
+        width:45%;
+    }
+    .container{
+        height: 50px;
+    }
+    .goToModels{
+        font-size: 1rem;
+        text-decoration: underline;
+        margin-bottom: 10px;
+    }
+    .collection{
+        overflow-x: scroll;
+        gap:15px
+    }
+    .collection::-webkit-scrollbar {
+        width: 0.4rem;
+    }   
+    .collection::-webkit-scrollbar-thumb {
+        background-color: darkgrey;
+    }
+    .titleContainer{
+        display: flex;
+        flex-direction: column;
+        padding-inline: 0;
+        justify-content: center;
+        height: 200px;
+    }
+    .title{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30%;
+    }
+    .titleText{
+        font-size: 2rem;
+        width: auto;
+    }
+    .collectionImageContainer{
+        width: 100%;
+        height: 70%;
+    }
+    .logoCollection{
+        width: 100%;
+    }
+    .divisorContainer{
+        z-index: -1;
+    }
+    .create{
+        width:100%;
+    }
+    .createTitle{
+        font-size: 1.8rem;
+        font-weight: 200;
+    }
+    .steps{
+        width: 95%;
+        flex-direction: column;
+        margin-top: 20px;
+        gap: 5px;
+    }
+    .steps div{
+        width: 100%;
+        text-align: center;
+        border: 1px solid #cccccc;
+        border-radius: 10px;
+    }
+    .steps h1{
+        font-size: 1.4rem;
+    }
+}

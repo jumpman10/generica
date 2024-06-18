@@ -1,0 +1,26 @@
+.input{
+    border-bottom: 1px solid rgb(189, 189, 189);
+    width: 600px;
+    padding: 10px;
+}
+.button{
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+
+.button:hover{
+    background-color: black;
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .input{
+        width: 100%;
+    }
+}
