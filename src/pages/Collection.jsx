@@ -6,7 +6,6 @@ import { articles } from '../constants';
 import CardModels from '../components/CardModels';
 import {gauchos, blinblin, animals, mystics } from '../assets'
 const Collection = () => {
-
 const idParams = useParams()
 const data = articles.filter(item => item.collection === idParams.collection)
   
