@@ -1,5 +1,5 @@
 // eslint-disable-next-line no-unused-vars
-import React, { useState, useContext } from 'react'
+import React, { useState, useContext, useEffect } from 'react'
 import { useParams } from 'react-router-dom';
 import { articles } from '../constants';
 import styles from './styles/model.module.css'
@@ -10,6 +10,14 @@ const data = articles.find(item => item.id === idParams.id)
 const { cart, setCart } = useContext(AppContext);
 const [size, setSize] = useState('');
 const [added, setAdded] = useState(false);
+const newCart = cart.filter(item => item.id == data.id)
+
+useEffect(() => {
+  if (newCart.length === 0){
+    setAdded(false)
+  }
+}, [newCart]);
+
 const goToCart = () =>{
   data.inCart = true
   setCart([...cart, data])
@@ -53,6 +61,8 @@ const addSize = (e) =>{
                 backgroundColor: size==='XL' ? 'black' : 'white', 
                 color: size==='XL' ? 'white' : 'black' }}>XL</button>
           </div>
+          {size === '' && 
+          <h3 style={{marginTop:20,fontSize:13}}>*Selecciona un talle antes de añadir al carrito</h3>}
           <button className={styles.add} onClick={!added && size !== '' ? goToCart : null}
               style={{backgroundColor: !added ? 'black' : 'grey'}}>Agregar al carrito</button>
         </div>
