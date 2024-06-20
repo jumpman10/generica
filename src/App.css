@@ -202,4 +202,31 @@ footer{
   .login{
     font-size: 12px;
   }
+  .dropdown-content{
+    width: 330px;
+  }
+  .article-container{
+    width: 300px;
+    height: 67px;
+  }
+  .article-img{
+    width: 65px;
+    height: 65px;
+    background-color: white;
+  }
+  .article-text{
+    width: 200px;
+    height: 65px;
+  }
+  .article-text h2{
+    font-size: 9px;
+  }
+  .button-container{
+    width: 34px;
+    height: 65px;
+  }
+  .buy-button{
+    width: 300px;
+    height: 35px;
+  }
 }
