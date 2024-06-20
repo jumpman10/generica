@@ -37,6 +37,9 @@ const App = () => {
               </Link>
           </div>
           <div className='dropdown'>
+              { cart.length > 0 &&
+                <div className='cart-length'>{cart.length}</div>
+              }
               <Link>
                 <button className='login'>Mi compra</button>
               </Link>

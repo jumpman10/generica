@@ -192,6 +192,20 @@ footer{
   margin-block: 3px;
   color: white;
 }
+.cart-length{
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: red;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  top:-10px;
+  font-size: 10px;
+}
 @media screen and (max-width: 600px) {
   .imgLogo{
     width: 60px;
